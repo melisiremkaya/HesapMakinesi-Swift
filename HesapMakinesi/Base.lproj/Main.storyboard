@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1bA-ey-EFK">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hesap Makinesi-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HesapMakinesi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sayı Giriniz" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rwd-za-7NF">
+                                <rect key="frame" x="50" y="238" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sayı Giriniz" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dPJ-o4-iuW">
+                                <rect key="frame" x="50" y="372" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sonuç" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CiH-Yq-7bO">
+                                <rect key="frame" x="50" y="648" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Dbo-ce-pU6">
+                                <rect key="frame" x="50" y="506" width="314" height="25.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6N-81-hxc">
+                                        <rect key="frame" x="0.0" y="0.0" width="74" height="25.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="TOPLA">
+                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="10"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonToplama:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EId-CQ-8cV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLW-zx-mgq">
+                                        <rect key="frame" x="80" y="0.0" width="74" height="25.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="ÇIKAR">
+                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="10"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonCikarma:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bs0-yH-z4d"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SM3-7h-18n">
+                                        <rect key="frame" x="160" y="0.0" width="74" height="25.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="ÇARP">
+                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="10"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonCarpma:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7zD-GX-JIn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9mz-OC-dfg">
+                                        <rect key="frame" x="240" y="0.0" width="74" height="25.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="BÖL">
+                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="10"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonBolme:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i4y-rE-Ycl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CiH-Yq-7bO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="0ET-x4-QhI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dbo-ce-pU6" secondAttribute="trailing" constant="50" id="3TL-le-bYd"/>
+                            <constraint firstItem="dPJ-o4-iuW" firstAttribute="top" secondItem="Rwd-za-7NF" secondAttribute="bottom" constant="100" id="9O0-KS-CXJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dPJ-o4-iuW" secondAttribute="trailing" constant="50" id="H3T-qD-i4g"/>
+                            <constraint firstItem="Rwd-za-7NF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="JRW-Vc-7bI"/>
+                            <constraint firstItem="Dbo-ce-pU6" firstAttribute="top" secondItem="dPJ-o4-iuW" secondAttribute="bottom" constant="100" id="KeK-rE-Yfm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rwd-za-7NF" secondAttribute="trailing" constant="50" id="bgi-CK-ab9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CiH-Yq-7bO" secondAttribute="bottom" constant="180" id="jzW-JL-Fbg"/>
+                            <constraint firstItem="Rwd-za-7NF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="oIl-S6-PJK"/>
+                            <constraint firstItem="dPJ-o4-iuW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="qoQ-7Y-kwW"/>
+                            <constraint firstItem="Dbo-ce-pU6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="ulm-x5-rvu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CiH-Yq-7bO" secondAttribute="trailing" constant="50" id="zct-oU-1YO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hesap Makinesi" id="ShX-5w-4R7"/>
+                    <connections>
+                        <outlet property="sayi1" destination="Rwd-za-7NF" id="f0I-SS-lNS"/>
+                        <outlet property="sayi2" destination="dPJ-o4-iuW" id="iEW-ZZ-FvT"/>
+                        <outlet property="sonuc" destination="CiH-Yq-7bO" id="yK2-UM-Dv1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="939.13043478260875" y="50.892857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="L4Q-MF-TNL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1bA-ey-EFK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zze-8f-Hbh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="P15-1u-VCG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U9E-ua-JS2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="50.892857142857139"/>
+        </scene>
+    </scenes>
+</document>
